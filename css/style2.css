@@ -15,7 +15,7 @@ a {
 
 /* Header */
 header {
-  background-color: white;
+  background-color: #111827;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -58,7 +58,7 @@ nav {
 .logo h1 {
   font-size: 24px;
   font-weight: 600;
-  color: #111827;
+  color: white;
   line-height: 36px;
 }
 
@@ -83,15 +83,15 @@ nav {
   display: flex;
   align-items: center;
   padding: 8px 16px;
-  color: #4e5562;
+  color: rgba(255, 255, 255, 0.7);
   font-weight: 500;
   font-size: 16px;
   border-radius: 8px;
 }
 
 .menu li a:hover {
-  background-color: #f3f4f6;
-  color: #111827;
+  background-color: #242a38;
+  color: white;
 }
 
 .menu li a::after {
@@ -119,7 +119,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #4e5562;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .accessibility .mode,
@@ -132,8 +132,8 @@ nav {
 
 .accessibility .mode:hover,
 .accessibility .user:hover {
-  background-color: #f3f4f6;
-  color: #111827;
+  background-color: #242a38;
+  color: white;
 }
 
 .accessibility .join {
@@ -162,7 +162,7 @@ nav {
   background: none;
   border: none;
   font-size: 20px;
-  color: #4e5562;
+  color: rgba(255, 255, 255, 0.7);
   cursor: pointer;
   padding: 8px;
   border-radius: 4px;
@@ -170,8 +170,8 @@ nav {
 }
 
 .hamburger:hover {
-  background-color: #f3f4f6;
-  color: #111827;
+  background-color: #242a38;
+  color: white;
 }
 
 /* Mobile Menu Overlay */
@@ -202,16 +202,16 @@ nav {
   top: 50%;
   z-index: 997;
   transform: rotate(-90deg);
-  background-color: white;
+  background-color: #111827;
   border-radius: 800px;
-  border: 1px solid #e5e7eb;
+  border: 0px solid #e5e7eb;
 }
 
 .customize a {
   display: flex;
   align-items: center;
   gap: 8px;
-  color: #111827;
+  color: white;
   font-weight: 500;
   font-size: 11px;
   line-height: 18px;
@@ -219,7 +219,7 @@ nav {
 }
 
 .customize-menu {
-  background-color: white;
+  background-color: #111827;
   display: flex;
   position: fixed;
   top: 0px;
@@ -238,20 +238,20 @@ nav {
   justify-content: space-between;
   padding: 23px;
   text-transform: capitalize;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .customize-menu .customize-header h3 {
   font-size: 20px;
   font-weight: 600;
-  color: black;
+  color: white;
 }
 
 .customize-menu .customize-header button {
   background: none;
   border: none;
   font-size: 20px;
-  color: #6b7280;
+  color: rgba(255, 255, 255, 0.7);
   cursor: pointer;
   padding: 4px;
   border-radius: 4px;
@@ -259,8 +259,8 @@ nav {
 }
 
 .customize-menu .customize-header button:hover {
-  background-color: #f3f4f6;
-  color: #111827;
+  background-color: #242a38;
+  color: white;
 }
 
 .customize-menu .bg-color {
@@ -270,14 +270,14 @@ nav {
 .customize-menu .bg-color h4 {
   font-size: 18px;
   font-weight: 600;
-  color: black;
+  color: white;
   line-height: 2;
 }
 
 .customize-menu .bg-color h5 {
   font-size: 14px;
   font-weight: 600;
-  color: black;
+  color: white;
 }
 
 .customize-menu .bg-color input {
@@ -460,7 +460,7 @@ nav {
     left: -320px;
     width: 320px;
     height: 100vh;
-    background-color: white;
+    background-color: #111827;
     z-index: 999;
     flex-direction: column;
     padding: 0;
@@ -480,14 +480,14 @@ nav {
   .menu-title {
     font-size: 18px;
     font-weight: 600;
-    color: #111827;
+    color: white;
   }
 
   .menu-close {
     background: none;
     border: none;
     font-size: 20px;
-    color: #6b7280;
+    color: rgba(255, 255, 255, 0.7);
     cursor: pointer;
     padding: 4px;
     border-radius: 4px;
@@ -495,8 +495,8 @@ nav {
   }
 
   .menu-close:hover {
-    background-color: #f3f4f6;
-    color: #111827;
+    background-color: #242a38;
+    color: white;
   }
 
   .menu ul {
@@ -517,7 +517,7 @@ nav {
     padding: 16px 20px;
     font-size: 16px;
     border-radius: 0;
-    color: #374151;
+    color: rgba(255, 255, 255, 0.7);
     font-weight: 500;
     display: flex;
     align-items: center;
@@ -525,8 +525,8 @@ nav {
   }
 
   .menu li a:hover {
-    background-color: #f9fafb;
-    color: #111827;
+    background-color: #242a38;
+    color: white;
   }
 
   /* Submenu */
