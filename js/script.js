@@ -9,6 +9,16 @@ const customize_close = document.getElementById("customize-close");
 const hero_background = document.getElementById("hero-background");
 const background_color = document.getElementById("background");
 const apply_btn = document.getElementById("apply-btn");
+const service_btns = document.getElementsByClassName("service-btn");
+
+if (localStorage.getItem("mode"))
+  document.querySelector("[href*='style']").href = localStorage.getItem("mode");
+if (localStorage.getItem("background_color")) {
+  hero_background.style.backgroundColor =
+    localStorage.getItem("background_color");
+  for (service of service_btns)
+    service.style.backgroundColor = localStorage.getItem("background_color");
+}
 
 function openMenu() {
   menu.classList.add("active");
@@ -25,6 +35,7 @@ function toggleMode() {
   link.href = link.href.includes("style.css")
     ? "css/style2.css"
     : "css/style.css";
+  localStorage.setItem("mode", link.href);
 }
 
 function openCustomize() {
@@ -39,6 +50,9 @@ function closeCustomize() {
 
 function changeHeroColor() {
   hero_background.style.backgroundColor = background_color.value;
+  for (service of service_btns)
+    service.style.backgroundColor = background_color.value;
+  localStorage.setItem("background_color", background_color.value);
 }
 
 hamburger.addEventListener("click", openMenu);
